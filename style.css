@@ -221,7 +221,8 @@ dl {
     /* Text size */
 }
 
-dt,dd {
+dt,
+dd {
     display: inline;
     /* Inline terms & definitions */
     margin: 0;
@@ -283,13 +284,3 @@ table {
     /* Rounded corners */
 }
 
-/* 
-table { 
-border-collapse: collapse; 
-width: 40%; 
-
-th, td { 
-border: 1px solid black; 
-padding: 8px; 
-text-align: left; 
-} */
