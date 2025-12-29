@@ -1,0 +1,286 @@
+/* -------------------- UNIVERSAL SELECTOR -------------------- */
+* {
+    box-sizing: border-box;
+    /* Includes padding + border inside width/height */
+}
+
+/* -------------------- BODY -------------------- */
+body {
+    background-color:beige !important;
+    /* Sets background (important overrides others) */
+    gap: 1rem;
+    /* Space between flex items */
+    display: flex;
+    /* Makes body a flex container */
+    flex-direction: column;
+    /* Stacks items vertically */
+}
+
+/* -------------------- HEADER -------------------- */
+header {
+    display: flex;
+    /* Flex layout for navigation area */
+    background-color: white;
+    /* Header background */
+    width: 100%;
+    /* Full width */
+    height: 4rem;
+    /* Fixed header height */
+    justify-content: space-around;
+    /* Even spacing between logo & nav */
+    align-items: center;
+    /* Vertically center items */
+}
+
+/* -------------------- MAIN -------------------- */
+main {
+    display: flex;
+    /* Enables flexbox layout */
+    gap: 1rem;
+    /* Space between sections */
+    flex-direction: column;
+    /* Vertical stacking */
+}
+
+/* -------------------- SECTION -------------------- */
+section {
+    display: flex;
+    /* Flex container */
+    width: 100%;
+    /* Full width */
+    background-color: white;
+    /* White background */
+    height: 34rem;
+    /* Fixed height */
+    align-items: center;
+    /* Center items horizontally */
+    flex-direction: column;
+    /* Vertical layout */
+    gap: 2rem;
+    /* Space between children */
+}
+
+/* -------------------- ASIDE -------------------- */
+aside {
+    display: flex;
+    /* Flex container */
+    width: 100%;
+    /* Full width */
+    background-color: white;
+    /* Background */
+    height: 34rem;
+    /* Height equal to section */
+    flex-direction: column;
+    /* Column layout */
+    padding-left: 1rem;
+    /* Left inner spacing */
+}
+
+/* -------------------- FOOTER -------------------- */
+footer {
+    display: flex;
+    /* Flex layout */
+    width: 100%;
+    /* Full width */
+    height: 4rem;
+    /* Footer height */
+    background-color: white;
+    /* Background color */
+}
+
+/* -------------------- FORM -------------------- */
+form {
+    display: flex;
+    /* Vertical form layout */
+    flex-direction: column;
+    /* Stack elements */
+    gap: 1rem;
+    /* Space between inputs */
+    width: 70%;
+    /* Form width */
+}
+
+/* FORM INPUT */
+form input {
+    width: 100%;
+    /* Full width input */
+    height: 3rem;
+    /* Fixed height */
+    border-radius: 0.2rem;
+    /* Slightly rounded corners */
+    font-size: 1.2rem;
+    /* Text size */
+    padding-left: 1rem;
+    /* Inner spacing left */
+    border: 1px solid rgb(157, 157, 157);
+    /* Grey border */
+}
+
+/* FORM BUTTON */
+form button {
+    width: 40%;
+    /* Button width */
+    height: 3rem;
+    /* Button height */
+    margin-top: 1rem;
+    /* Space on top */
+    margin-left: auto;
+    /* Center align */
+    margin-right: auto;
+    /* Center align */
+    background-color: rgb(153, 67, 234);
+    /* Purple button */
+    color: white;
+    /* White text */
+    font-size: 1.2rem;
+    /* Text size */
+    border: none;
+    /* Remove border */
+}
+
+/* HOVER EFFECT FOR BUTTON */
+form button:hover {
+    background-color: rgb(185, 127, 239);
+    /* Lighter purple when hovered */
+}
+
+/* FORM LABEL */
+form label {
+    font-size: 1.5rem;
+    /* Label text size */
+}
+
+/* PLACEHOLDER PSEUDO-ELEMENT */
+form input::placeholder {
+    font-size: 1.2rem;
+    /* Placeholder text size */
+}
+
+/* -------------------- LOGO CIRCLE -------------------- */
+.logo {
+    display: flex;
+    /* Centering with flexbox */
+    background-color: rgb(153, 67, 234);
+    /* Purple circle */
+    border-radius: 50%;
+    /* Perfect circle */
+    width: 3rem;
+    /* Diameter */
+    height: 3rem;
+    align-items: center;
+    /* Center icon vertically */
+    justify-content: center;
+    /* Center icon horizontally */
+    color: white;
+    /* Icon color */
+    font-size: 1.5rem;
+    /* Icon size */
+}
+
+/* -------------------- BRAND (LOGO + TEXT) -------------------- */
+.brand {
+    display: flex;
+    /* Horizontal layout */
+    align-items: center;
+    /* Vertically center */
+    gap: 1rem;
+    /* Space between logo & name */
+}
+
+/* -------------------- NAVIGATION LIST -------------------- */
+nav ul {
+    display: flex;
+    /* Horizontal nav items */
+    flex-direction: row;
+    /* Default row layout */
+    gap: 2rem;
+    /* Space between menu items */
+    list-style: none;
+    /* Remove bullets */
+    font-size: 1.5rem;
+    /* Menu text size */
+}
+
+/* FIRST-CHILD PSEUDO-CLASS */
+nav ul li:first-child {
+    font-weight: bold;
+    /* Highlight first nav item */
+}
+
+/* -------------------- ORDERED LIST -------------------- */
+ol {
+    font-size: 1.5rem;
+    /* List text size */
+    list-style-type: lower-roman;
+    /* Roman numerals */
+}
+
+/* -------------------- DESCRIPTION LIST -------------------- */
+dl {
+    font-size: 1.5rem;
+    /* Text size */
+}
+
+dt,
+dd {
+    display: inline;
+    /* Inline terms & definitions */
+    margin: 0;
+    /* Remove default spacing */
+}
+
+/* dd::after — PSEUDO ELEMENT */
+dd::after {
+    content: "\A";
+    /* Adds line break after each definition */
+    white-space: pre;
+    /* Allows newline interpretation */
+}
+
+/* -------------------- TABLE STYLING -------------------- */
+td,
+th,
+tr {
+    border: 1px solid black !important;
+    /* Force black borders */
+    font-size: 1.5rem;
+    /* Bigger text */
+    text-align: center;
+    /* Center text */
+}
+
+table {
+    border-collapse: collapse;
+    /* Merge table borders */
+    width: 70%;
+    /* Table width */
+}
+
+/* -------------------- BOX MODEL DEMO -------------------- */
+.box_model {
+    display: flex;
+    /* Side-by-side layout */
+    gap: 0;
+    /* No space */
+}
+
+.box_model h2 {
+    margin-bottom: 0;
+    /* Remove bottom space */
+}
+
+.box {
+    margin: 3rem;
+    /* Outer margin */
+    width: 40%;
+    /* Width of each demo box */
+    height: 20rem;
+    /* Height */
+    border: 1px solid black;
+    /* Border */
+    padding: 3rem;
+    /* Inner spacing */
+    border-radius: 10px;
+    /* Rounded corners */
+}
+
